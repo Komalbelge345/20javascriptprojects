@@ -9,7 +9,7 @@ body{
 }
 
 .password-container{
-    background-color: palevioletred;
+    background-color: skyblue;
     width: 500px;
     padding: 20px;
     border-radius: 20px;
@@ -57,7 +57,7 @@ body{
     cursor: pointer;
 }
 .btn:hover{
-    background-color:green ;
+    background-color:lightslategrey;
 }
 .btn:active{
     transform: scale(0.95);
@@ -76,6 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    transition: 0.4s;
 }
 
 .active.alert-container{

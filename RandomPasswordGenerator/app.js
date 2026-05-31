@@ -8,8 +8,18 @@ btn.addEventListener("click", () => {
     
 })
 copyIcon.addEventListener("click", () => {
-    copyPassword();
-    
+    if (inp.value.length > 0) {
+        copyPassword();
+        alert.classList.remove("active");
+        
+        setTimeout(() => {
+            alert.classList.add("active");
+        }, 1500)
+        inp.value = "";
+    } else {
+        alert.innerText = "Generate Password!";
+         alert.classList.remove("active");
+    }
 })
 
 function createPassword() {
